@@ -8,7 +8,7 @@ Esse repositório reúne as atividades práticas relacionadas aos meus estudos d
 - **Configurações** do WebDriver
 
 - **Atividade 1:** Introdução ao Selenium Webdriver
-  - Descrição: Uma introdução prática ao Selenium Webdriver, abordando a configuração do ambiente e a execução de simples automações.
+  - Descrição: Uma introdução prática ao Selenium Webdriver, abordando a configuração do ambiente e a execução de automação simples de login.
 
 
 
@@ -22,7 +22,7 @@ Antes de executar os códigos deste repositório, certifique-se de ter as seguin
 
 3. **WebDriver:** Dependendo do navegador que você pretende automatizar, faça o download do driver correspondente e configure o caminho no projeto.
 
-4. **IDE (Ambiente de Desenvolvimento Integrado):** Recomenda-se utilizar uma IDE como Eclipse ou IntelliJ para abrir e executar os projetos.
+4. **IDE:** Recomenda-se utilizar uma IDE como Eclipse ou IntelliJ para abrir e executar os projetos.
 
 5. **Selenium Dependencies:** Todas as dependências do Selenium estão listadas no arquivo `pom.xml` do projeto. O Maven cuidará do download e gerenciamento dessas dependências.
 
