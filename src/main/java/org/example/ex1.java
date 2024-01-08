@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 public class ex1 {
 
     public static void main(String[] args) {
+        //caso você utilize o drive de outro navegador apenas digite o nome dele no parametro da função abaixo
         WebDriver driver = WebDriverConfig.getDriver("chrome");
 
         driver.manage().window().maximize();
