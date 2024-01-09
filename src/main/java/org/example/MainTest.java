@@ -13,5 +13,7 @@ public class MainTest {
         config.openUrl();
         //Teste de login
         testLogin.login("standard_user", "secret_sauce");
+        //fechando aplicação
+        driver.quit();
     }
 }
