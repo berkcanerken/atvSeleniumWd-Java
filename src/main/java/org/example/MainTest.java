@@ -14,7 +14,11 @@ public class MainTest {
         //Teste de login
         testLogin.login("standard_user", "secret_sauce");
         //Espera para ver tela
-        Thread.sleep(2000);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         //fechando aplicação
         driver.quit();
     }
