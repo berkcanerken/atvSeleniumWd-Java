@@ -12,7 +12,7 @@ public class CarrinhoTest {
     }
 
     public void addAoCarrinho(String itemId){
-        String itemXPath = String.format("//*[@id='%s']", itemId);
+        String itemXPath = String.format("//button[contains(@id, '%s')]", itemId);
         driver.findElement(By.xpath(itemXPath)).click();
     }
     public void verCarrinho(){
