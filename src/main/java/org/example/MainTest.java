@@ -8,11 +8,15 @@ public class MainTest {
         WebDriver driver = WebDriverConfig.getDriver("chrome");
         WebDriverConfig config = new WebDriverConfig(urlBase);
         LoginTest testLogin = new LoginTest(driver);
+        CarrinhoTest carrinho = new CarrinhoTest();
 
         //Abrindo Site
         config.openUrl();
         //Teste de login
         testLogin.login("standard_user", "secret_sauce");
+
+        //adiciona ao carrinho
+        carrinho.addAoCarrinho("add-to-cart-sauce-labs-backpack");
         //Espera para ver tela
         try {
             Thread.sleep(4000);
