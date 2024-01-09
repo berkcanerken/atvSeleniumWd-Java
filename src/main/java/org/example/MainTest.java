@@ -13,6 +13,8 @@ public class MainTest {
         config.openUrl();
         //Teste de login
         testLogin.login("standard_user", "secret_sauce");
+        //Espera para ver tela
+        Thread.sleep(2000);
         //fechando aplicação
         driver.quit();
     }
