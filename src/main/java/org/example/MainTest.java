@@ -7,5 +7,7 @@ public class MainTest {
         WebDriver driver = WebDriverConfig.getDriver("chrome");
         LoginTest testLogin = new LoginTest(driver);
 
+        //Teste de login
+        testLogin.login("standard_user", "secret_sauce");
     }
 }
