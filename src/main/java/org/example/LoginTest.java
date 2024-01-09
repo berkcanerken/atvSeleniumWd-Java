@@ -4,10 +4,10 @@ package org.example;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class TestLogin{
+public class LoginTest {
     private WebDriver driver;
 
-    public TestLogin(WebDriver driver) {
+    public LoginTest(WebDriver driver) {
         this.driver = driver;
     }
 
