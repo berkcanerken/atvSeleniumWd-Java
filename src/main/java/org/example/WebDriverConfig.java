@@ -7,7 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebDriverConfig {
-    private static WebDriver driver;
+    public static WebDriver driver;
     public static WebDriver getDriver(String browser){
         if (driver == null){
             initializeWebDriver(browser);
