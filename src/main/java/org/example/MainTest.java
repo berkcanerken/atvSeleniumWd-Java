@@ -8,22 +8,27 @@ public class MainTest {
         WebDriver driver = WebDriverConfig.getDriver("chrome");
         WebDriverConfig config = new WebDriverConfig(urlBase);
         LoginTest testLogin = new LoginTest(driver);
-        CarrinhoTest carrinho = new CarrinhoTest();
 
-        //Abrindo Site
+        // Abrindo Site
         config.openUrl();
-        //Teste de login
+        // Teste de login
         testLogin.login("standard_user", "secret_sauce");
 
-        //adiciona ao carrinho
+        // Inicializando CarrinhoTest com o driver
+        CarrinhoTest carrinho = new CarrinhoTest(driver);
+
+        // Adiciona ao carrinho
         carrinho.addAoCarrinho("add-to-cart-sauce-labs-backpack");
-        //Espera para ver tela
+        carrinho.verCarrinho();
+
+        // Espera para ver a tela
         try {
             Thread.sleep(4000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        //fechando aplicação
+
+        // Fechando aplicação
         driver.quit();
     }
 }
