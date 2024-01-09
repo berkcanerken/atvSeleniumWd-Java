@@ -21,6 +21,12 @@ public class ex1 {
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         driver.findElement(By.xpath("/html/body/div/div/div[2]/div[1]/div/div/form/input")).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.quit();
 
     }
 }
