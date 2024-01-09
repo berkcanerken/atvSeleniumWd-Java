@@ -15,7 +15,7 @@ public class MainTest {
         testLogin.login("standard_user", "secret_sauce");
         //Espera para ver tela
         try {
-            Thread.sleep(2000);
+            Thread.sleep(4000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
