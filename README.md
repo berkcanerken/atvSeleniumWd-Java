@@ -2,15 +2,6 @@
 
 Esse repositório reúne as atividades práticas relacionadas aos meus estudos da tecnologia Selenium Webdriver utilizando a linguagem de programação Java.
 
-## Conteúdo do Repositório
-
-#### O repositório está organizado da seguinte maneira:
-- **Configurações** do WebDriver
-
-- **Atividade 1:** Introdução ao Selenium Webdriver
-  - Descrição: Uma introdução prática ao Selenium Webdriver, abordando a configuração do ambiente e a execução de automação simples de login.
-
-
 
 ## Especificações Necessárias
 
