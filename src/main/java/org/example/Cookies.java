@@ -3,11 +3,11 @@ package org.example;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-//Classe para por métodos relacionados ao manuseio de cookies
-public class cookies {
+//Classe para por métodos relacionados ao manuseio de Cookies
+public class Cookies {
     private WebDriver driver;
 
-    public cookies(WebDriver driver) {
+    public Cookies(WebDriver driver) {
         this.driver = driver;
     }
     public void aceitandoCookies(String itemText){
