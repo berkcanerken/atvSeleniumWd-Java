@@ -1,7 +1,6 @@
 # Selenium Webdriver + Java - Atividades Práticas
 
-Esse repositório reúne as atividades práticas relacionadas aos meus estudos da tecnologia Selenium Webdriver utilizando a linguagem de programação Java.
-
+Este repositório reúne as atividades práticas relacionadas aos meus estudos da tecnologia Selenium Webdriver utilizando a linguagem de programação Java.
 
 ## Especificações Necessárias
 
@@ -11,7 +10,11 @@ Antes de executar os códigos deste repositório, certifique-se de ter as seguin
 
 2. **Maven:** O Maven é utilizado para gerenciar as dependências do projeto. Certifique-se de tê-lo instalado.
 
-3. **WebDriver:** Dependendo do navegador que você pretende automatizar, faça o download do driver correspondente e configure o caminho no projeto.
+3. **WebDriver:** Dependendo do navegador que você pretende automatizar, faça o download do driver correspondente e configure dentro da classe `MainTest` a sua opção.
+
+   ```java
+   WebDriver driver = WebDriverConfig.getDriver("suaOpcao");
+
 
 4. **IDE:** Recomenda-se utilizar uma IDE como Eclipse ou IntelliJ para abrir e executar os projetos.
 
