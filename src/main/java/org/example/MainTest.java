@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.Metodos.ManipulacaoDeDropDown;
 import org.openqa.selenium.WebDriver;
 
 public class MainTest {
@@ -20,6 +21,11 @@ public class MainTest {
         // Adiciona ao carrinho
         carrinho.addAoCarrinho("add-to-cart-sauce-labs-backpack");
         carrinho.verCarrinho();
+        //Passando para outra página
+        driver.navigate().to("https://www.amazon.com");
+        //Manipulando dropdowns dessa página
+        ManipulacaoDeDropDown manipulando = new ManipulacaoDeDropDown(driver);
+        manipulando.ManipulandoDDown("url", "valor", "element1");
 
         // Espera para ver a tela
         try {

@@ -8,16 +8,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 //Manipulando um dropDown
 
-public class Metodo1 {
+public class ManipulacaoDeDropDown {
     private WebDriver driver;
 
-    public Metodo1(WebDriver driver) {
+    public ManipulacaoDeDropDown(WebDriver driver) {
         this.driver = driver;
     }
     //Criando o elemento
-    public void ManipulandoDDown(String nome, String valor){
+    public void ManipulandoDDown(String nome, String tipoSelecao,String valor){
         WebElement ddown = localizarElementoWeb(nome);
-        selecionarOpcaoDDown(ddown, valor );
+        selecionarOpcaoDDown(ddown, tipoSelecao, valor);
 
     }
     public WebElement localizarElementoWeb(String nome){
