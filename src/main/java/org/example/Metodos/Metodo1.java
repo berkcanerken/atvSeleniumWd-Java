@@ -24,9 +24,23 @@ public class Metodo1 {
         String itemXpath = String.format("//select[contains(@name, '%s')]", nome);
         return driver.findElement(By.xpath(itemXpath));
     }
-    public void  selecionarOpcaoDDown(WebElement ddown, String valor){
+    public void  selecionarOpcaoDDown(WebElement ddown, String tipoSelecao, String valor){
         Select select = new Select(ddown);
-        select.selectByValue(valor);
+        tipoSelecao = tipoSelecao.toLowerCase();
+        switch (tipoSelecao){
+            case "valor":
+                select.selectByValue(valor);
+                break;
+            case "texto":
+                select.selectByVisibleText(valor);
+                break;
+            case "index":
+                int novoValor = Integer.parseInt(valor);
+                select.selectByIndex(novoValor);
+                break;
+            default:
+                throw new IllegalArgumentException("O valor: " + valor+" é inválido!");
+        }
     }
 
 
