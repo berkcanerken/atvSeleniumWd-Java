@@ -15,10 +15,19 @@ public class Metodo1 {
         this.driver = driver;
     }
     //Criando o elemento
-    public void ManipulandoDDown(String nome){
-        String itemXpath = String.format("//select[contains(@name, '%s')]", nome);
-        WebElement ddown = driver.findElement(By.xpath(itemXpath));
-        Select select = new Select(ddown);
+    public void ManipulandoDDown(String nome, String valor){
+        WebElement ddown = localizarElementoWeb(nome);
+        selecionarOpcaoDDown(ddown, valor );
+
     }
+    public WebElement localizarElementoWeb(String nome){
+        String itemXpath = String.format("//select[contains(@name, '%s')]", nome);
+        return driver.findElement(By.xpath(itemXpath));
+    }
+    public void  selecionarOpcaoDDown(WebElement ddown, String valor){
+        Select select = new Select(ddown);
+        select.selectByValue(valor);
+    }
+
 
 }
