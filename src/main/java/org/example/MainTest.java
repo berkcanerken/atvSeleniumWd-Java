@@ -27,6 +27,9 @@ public class MainTest {
         ManipulacaoDeDropDown manipulando = new ManipulacaoDeDropDown(driver);
         manipulando.ManipulandoDDown("url", "valor", "element1");
 
+        //Mudando de página
+
+
         // Espera para ver a tela
         try {
             Thread.sleep(4000);
