@@ -1,6 +1,6 @@
 # Selenium Webdriver + Java - Atividades Práticas
 
-Este repositório reúne as atividades práticas relacionadas aos meus estudos da tecnologia Selenium Webdriver utilizando a linguagem de programação Java.
+Este repositório reúne as atividades práticas relacionadas aos meus estudos da tecnologia Selenium Webdriver utilizando a linguagem de programação Java. Não seguindo um padrão de projeto, com o objetivo apenas de registro de aprendizado.
 
 ## Especificações Necessárias
 
